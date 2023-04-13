@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Deklarasi prosedur absen
+void absen(string name, int npm);
+
+int main() {
+    string nama;
+    int npm;
+    cout << "Masukkan Nama: ";
+    cin >> nama;
+    cout << "Masukkan NPM: ";
+    cin >> npm;
+    
+    // Memanggil prosedur absen
+    absen(nama, npm);
+    
+    return 0;
+}
+
+// Definisi prosedur absen
+void absen(string name, int npm) {
+    cout << "Nama: " << name << endl;
+    cout << "NPM: " << npm << endl;
+    cout << "Hadir dalam absensi." << endl;
+}
