@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+// Deklarasi fungsi luasLingkaran
+double luasLingkaran(double r);
+
+int main() {
+    double jari_jari;
+    cout << "Masukkan jari-jari lingkaran: ";
+    cin >> jari_jari;
+    
+    // Memanggil fungsi luasLingkaran dan menampilkan hasilnya
+    double luas = luasLingkaran(jari_jari);
+    cout << "Luas lingkaran adalah: " << luas << endl;
+    
+    return 0;
+}
+
+// Definisi fungsi luasLingkaran
+double luasLingkaran(double r) {
+    const double pi = 3.14159265359; // Nilai pi
+    double luas = pi * r * r; // Rumus luas lingkaran
+    return luas;
+}
