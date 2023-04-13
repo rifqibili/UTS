@@ -1,0 +1,59 @@
+#include <iostream>
+using namespace std;
+
+class PersegiPanjang {
+private:
+    int panjang;
+    int lebar;
+
+public:
+    // Constructor dengan parameter
+    PersegiPanjang(int p, int l) {
+        panjang = p;
+        lebar = l;
+    }
+
+    // Setter untuk panjang
+    void setPanjang(int p) {
+        panjang = p;
+    }
+
+    // Getter untuk panjang
+    int getPanjang() {
+        return panjang;
+    }
+
+    // Setter untuk lebar
+    void setLebar(int l) {
+        lebar = l;
+    }
+
+    // Getter untuk lebar
+    int getLebar() {
+        return lebar;
+    }
+
+    // Fungsi untuk menghitung luas persegi panjang
+    int hitungLuas() {
+        return panjang * lebar;
+    }
+};
+
+int main() {
+    // Membuat objek "psg" dari class "PersegiPanjang" dengan constructor
+    PersegiPanjang psg(5, 10);
+
+    // Menggunakan getter untuk mengambil nilai atribut panjang dan lebar
+    int panjang = psg.getPanjang();
+    int lebar = psg.getLebar();
+
+    // Menampilkan nilai atribut panjang dan lebar
+    cout << "Panjang: " << panjang << endl;
+    cout << "Lebar: " << lebar << endl;
+
+    // Menggunakan fungsi hitungLuas untuk menghitung dan menampilkan luas
+    int luas = psg.hitungLuas();
+    cout << "Luas: " << luas << endl;
+
+    return 0;
+}
