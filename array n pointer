@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Contoh Array
+    int angka[5] = {1, 2, 3, 4, 5}; // Deklarasi dan inisialisasi array dengan 5 angka
+
+    cout << "Isi array angka: ";
+    for (int i = 0; i < 5; i++) {
+        cout << angka[i] << " "; // Menampilkan isi array angka
+    }
+    cout << endl;
+
+    // Contoh Pointer
+    int x = 10;
+    int* ptr; // Deklarasi pointer
+    ptr = &x; // Menyimpan alamat memori variabel x ke dalam pointer
+
+    cout << "Nilai x: " << x << endl;
+    cout << "Alamat memori x: " << &x << endl;
+    cout << "Nilai yang ditunjuk oleh pointer ptr: " << *ptr << endl; // Mengakses nilai melalui pointer
+    cout << "Alamat memori yang ditunjuk oleh pointer ptr: " << ptr << endl; // Menampilkan alamat memori yang ditunjuk oleh pointer
+
+    return 0;
+}
